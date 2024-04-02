@@ -25,6 +25,8 @@ The public SSH keys will added to a password-less sudo user named `debian`.
 ## Creating a new VM Template
 
 Templates are created by converting an existing VM to a template. As soon as the VM is converted, it cannot be started anymore. If you want to modify an existing template, you need to create a new template.
+> Before running the packer build, go and change the variable (debian.pkr.hcl) called vm_id, it is initially set to 9000.
+
 
 Here's how to do all that in one step:
 
